@@ -73,7 +73,8 @@ input.onpaste = function() {
 
 // Add game Instruction
 function theInstr(lvl) {
-    instruction.innerHTML = `<span class="exp">Explanation: </span>You are playing the ${lvl} Level & you have ${lvls[lvl]} seconds and 3 seconds extra for 
+    instruction.innerHTML = `<span class="exp">Explanation: </span> The game includes 3 levels [Easy "The Default" , Medium , Hard], You can choose from select box in the top.<br/>
+    Now you are playing the (<b> ${lvl} </b>) Level & you have (<b> ${lvls[lvl]} </b>) seconds and ( <b>3</b> ) seconds extra for 
             the first word if you fail to write the correct word during the time you will lose, 
             if you write all words corectly you will pass the game.<br/>
         Click <span>Start Playing</span> and start your challenge.`
@@ -92,7 +93,6 @@ function getLevel(op) {
     theInstr(op);
 };
 getLevel(selectedLvl.value);
-// console.log(firstWord);
 
 
 selectedLvl.onchange = (e) => {

@@ -42,6 +42,23 @@ h1.name {
     font-weight: bold;
     padding: 2px;
 }
+.seconds {
+    position: relative;
+    padding: 0 7px;
+}
+.seconds::after,
+.seconds::before {
+    position: absolute;
+    top: 0;
+}
+.seconds::before {
+    content: '[';
+    left: 0;
+}
+.seconds::after {
+    content: ']';
+    right: 0;
+}
 .game .game-info,
 .game .words,
 .game .control {
