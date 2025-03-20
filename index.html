@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Speed Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="name">Typing Speed Test Game</h1>
+    <div class="game">
+        <div class="game-info">
+            You Are playing On 
+            <select name="level" id="lvl">
+                <option value="Easy" selected>Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+            </select>
+            Level & You Have <span class="seconds">[]</span>
+            Seconds To Type The Word
+        </div>
+        <button class="start">Start Playing</button>
+        <div class="the-word"></div>
+        <input type="text" name="" id="">
+        <div class="words">Words Will Show Here</div>
+        <div class="control">
+            <div class="time">Time Left: <span></span> Seconds</div>
+            <div class="score">Score: <span class="got">0</span> from <span class="total"></span></div>
+        </div>
+        <div class="finish"></div>
+        <p class="instruction"></p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

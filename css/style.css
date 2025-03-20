@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    box-sizing: border-box;
+    --main-color: #03A9F4;
+    --sceondry-color: #009688;
+}
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: #eee;
+}
+span {
+    font-weight: bold;
+    color: var(--sceondry-color);
+}
+
+h1.name {
+    margin: 0;
+    background-color: var(--main-color);
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    font-size: 25px;
+}
+.game {
+    width: 700px;
+    max-width: 97%;
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.game .game-info #lvl {
+    outline: none;
+    border: 1px solid var(--sceondry-color);
+    border-radius: 3px;
+    color: var(--sceondry-color);
+    font-weight: bold;
+    padding: 2px;
+}
+.game .game-info,
+.game .words,
+.game .control {
+    background-color: #fff;
+    padding: 7px 12px;
+    color: #424242;
+    border-radius: 6px;
+}
+.game button {
+    cursor: pointer;
+    border: 0;
+    background-color: var(--sceondry-color);
+    color: #fff;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.3s;
+}
+.game button:hover {
+    background-color: #018a7c;
+}
+.game .the-word {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+    user-select: none;
+}
+.game input {
+    border: 2px solid var(--main-color);
+    outline: none;
+    border-radius: 6px;
+    padding: 10px;
+    caret-color: #03A9F4;
+    font-size: 17px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.game .words {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.game .words span {
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    user-select: none;
+}
+.game .control {
+    display: flex;
+    justify-content: space-between;
+}
+.game .finish {
+    font-size: 40px;
+    font-weight: bold;
+}
+.game .finish .passed {
+    color: #4CAF50;
+}
+.game .finish .game-over {
+    color: red;
+}
+.game .finish .last-score {
+    font-size: 20px;
+    color: #424242;
+}
+.game p {
+    text-align: left;
+    margin: 40px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #424242;
+}
+.game p .exp {
+    font-weight: bold;
+    color: #004D40;
+}
